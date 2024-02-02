@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>W3.CSS Accordion</title>
+  <!-- W3.CSS CDN -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    .accordion-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .accordion {
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .panel {
+      display: none;
+      background-color: #f7f7f7;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .panel p {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+<br/>
+  <div class="accordion-container">
+    <div class="w3-card w3-round-large w3-white accordion">
+      <button onclick="toggleAccordion('accordion1')" class="w3-button w3-block w3-left-align" style="background-color: #007bff; color: white;">Accordion 1</button>
+      <div id="accordion1" class="panel w3-animate-opacity">
+        <p>Hello, welcome to QAScripts!</p>
+      </div>
+    </div>
+
+    <div class="w3-card w3-round-large w3-white accordion">
+      <button onclick="toggleAccordion('accordion2')" class="w3-button w3-block w3-left-align" style="background-color: #28a745; color: white;">Accordion 2</button>
+      <div id="accordion2" class="panel w3-animate-opacity">
+        <p>Follow QAScripts!</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleAccordion(id) {
+      var x = document.getElementById(id);
+      if (x.style.display === 'block') {
+        x.style.display = 'none';
+      } else {
+        x.style.display = 'block';
+      }
+    }
+  </script>
+</body>
+</html>

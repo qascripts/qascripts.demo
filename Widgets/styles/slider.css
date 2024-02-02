@@ -1,0 +1,20 @@
+/* Custom Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+  }
+  
+  .slider-container {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .slider {
+    width: 80%;
+    margin: 20px auto;
+  }
+  

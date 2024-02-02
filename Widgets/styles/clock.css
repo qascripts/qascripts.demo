@@ -1,0 +1,45 @@
+/* Custom Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to the top */
+    min-height: 100vh;
+  }
+  
+  .container {
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px; /* Add margin from the top */
+  }
+  
+  label {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .time-picker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .time-picker input {
+    padding: 8px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    width: 50px;
+    text-align: center;
+    margin: 0 5px;
+  }
+  

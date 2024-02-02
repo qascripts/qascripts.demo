@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dynamic Web Table</title>
+  <link rel="stylesheet" href="styles/webtable.css">
+</head>
+<body>
+
+  <h2>Dynamic Web Table</h2>
+
+  <table id="sortable-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>City</th>
+        <th>Salary</th>
+      </tr>
+    </thead>
+    <tbody id="table-body">
+      <!-- Rows will be added dynamically -->
+    </tbody>
+  </table>
+
+  <script src="scripts/webtable.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      generateTable();
+    });
+  </script>
+</body>
+</html>

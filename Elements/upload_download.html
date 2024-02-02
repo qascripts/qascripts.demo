@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>File Upload and Download</title>
+  <link rel="stylesheet" href="styles/uploadDownload.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>File Upload and Download</h2>
+
+    <form id="fileForm" enctype="multipart/form-data">
+      <div class="input-group">
+        <input type="file" id="uploadInput" name="uploadInput">
+        <button type="submit" id="uploadButton">Upload</button>
+      </div>
+    </form>
+
+    <a href="./assets/sample.txt" id="downloadLink" download="sample_file.txt">
+      <button id="downloadButton">Download Sample File</button>
+    </a>
+  </div>
+
+  <script src="scripts/uploadDownload.js"></script>
+</body>
+</html>

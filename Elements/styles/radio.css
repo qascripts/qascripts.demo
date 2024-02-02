@@ -1,0 +1,38 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .radio-container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .radio-label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  input[type="radio"]:disabled {
+    cursor: not-allowed;
+  }
+  
+  /* Checked radio button style */
+  input[type="radio"]:checked + .radio-label {
+    color: #007bff;
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,48 @@
+    /* Basic styling */
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start; /* Align to the top */
+        height: 100vh;
+        margin: 0;
+      }
+  
+      .tooltip {
+        position: relative;
+        text-align: center;
+        margin-top: 50px; /* Adjust margin from the top */
+      }
+  
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        top: -30px; /* Position the tooltip above the button */
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+  
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+      }
+  
+      /* Button styles */
+      .tooltip button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
